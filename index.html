@@ -1,6 +1,87 @@
-<html>
-<head><title>Het is altijd DNS</title></head>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het is altijd DNS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Centreer de menu-items */
+        }
+
+        nav ul li {
+            display: inline-block;
+            /* Zorgt voor een horizontaal menu */
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            /* Vloeiende overgang */
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            /* Kleur bij mouse-over */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Het is altijd DNS</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#home">HetIsAltijdDNS</a></li>
+            <li><a href="#beschrijvingen">Beschrijvingen</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1 id="home">Het is altijd DNS</h1>
+        <p>Netwerk problemen? De oorzaak is altijd <a href="#dns">DNS</a>! Misschien dat deze website je kan helpen je
+            <a href="#dns"></a>DNS</a> probleem te
+            fixen.
+        </p>
+
+        <h1 id="dns">DNS</h1>
+        <p>Het <b>Domain Name System</b> (<b>DNS</b>) is het systeem en netwerkprotocol dat op het internet gebruikt
+            wordt om namen van computers naar numerieke adressen (IP-adressen) te vertalen en omgekeerd.</p>
+
+        <h1 id="nslookup">NSLOOKUP</h1>
+        <p>nslookup is een netwerkgereedschap dat gebruikt wordt om DNS-servers te ondervragen en zodoende informatie te
+            vergaren over onder meer de MX-records en nameservers (NS) van een domein. De naam is een afgeleide van
+            <i>name server lookup</i>.
+        </p>
+
+    </div>
+
 </body>
+
 </html>
