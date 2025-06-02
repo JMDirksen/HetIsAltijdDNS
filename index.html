@@ -2,86 +2,120 @@
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Het is altijd DNS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het is altijd DNS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            /* Centreer de menu-items */
-        }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        nav ul li {
-            display: inline-block;
-            /* Zorgt voor een horizontaal menu */
-        }
+    nav ul li {
+      display: inline-block;
+    }
 
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            /* Vloeiende overgang */
-        }
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-        nav ul li a:hover {
-            background-color: #575757;
-            /* Kleur bij mouse-over */
-        }
+    nav ul li a:hover {
+      background-color: #575757;
+    }
 
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    .content {
+      padding: 20px;
+      margin: auto;
+      width: 700px;
+      text-align: left;
+    }
+
+    .content img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      padding-top: 30px;
+      font-size: xx-large;
+    }
+
+    h2 {
+      padding-top: 50px;
+      font-size: x-large;
+    }
+
+    .content section p a {
+      color: cornflowerblue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
+  <nav>
+    <ul>
+      <li><a href="#home">HetIsAltijdDNS</a></li>
+      <li><a href="#beschrijvingen">Beschrijvingen</a></li>
+      <li><a href="mailto:contact@hetisaltijddns.nl" target="_blank">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
 
-    <nav>
-        <ul>
-            <li><a href="#home">HetIsAltijdDNS</a></li>
-            <li><a href="#beschrijvingen">Beschrijvingen</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <section id="home">
+      <h1>Het is altijd DNS</h1>
+      <p>
+        Netwerk problemen? De oorzaak is altijd <a href="#dns">DNS</a>! Misschien dat deze website je kan helpen je
+        <a href="#dns">DNS</a> probleem te fixen.
+      </p>
+      <img src="HowDNSWorks.png" width="600" height="496" />
+    </section>
 
-    <div class="content">
-        <h1 id="home">Het is altijd DNS</h1>
-        <p>Netwerk problemen? De oorzaak is altijd <a href="#dns">DNS</a>! Misschien dat deze website je kan helpen je
-            <a href="#dns"></a>DNS</a> probleem te
-            fixen.
+    <section id="beschrijvingen">
+      <h1 id="beschrijvingen">Beschrijvingen</h1>
+
+      <section id="dns">
+        <h2>DNS</h2>
+        <p>
+          Het <b>Domain Name System</b> (<b>DNS</b>) is het systeem en netwerkprotocol dat op het internet gebruikt
+          wordt om namen van computers naar numerieke adressen (IP-adressen) te vertalen en omgekeerd.
         </p>
+      </section>
 
-        <h1 id="dns">DNS</h1>
-        <p>Het <b>Domain Name System</b> (<b>DNS</b>) is het systeem en netwerkprotocol dat op het internet gebruikt
-            wordt om namen van computers naar numerieke adressen (IP-adressen) te vertalen en omgekeerd.</p>
-
-        <h1 id="nslookup">NSLOOKUP</h1>
-        <p>nslookup is een netwerkgereedschap dat gebruikt wordt om DNS-servers te ondervragen en zodoende informatie te
-            vergaren over onder meer de MX-records en nameservers (NS) van een domein. De naam is een afgeleide van
-            <i>name server lookup</i>.
+      <section id="nslookup">
+        <h2>NSLOOKUP</h2>
+        <p>
+          nslookup is een netwerkgereedschap dat gebruikt wordt om DNS-servers te ondervragen en zodoende informatie te
+          vergaren over onder meer de MX-records en nameservers (NS) van een domein. De naam is een afgeleide van
+          <i>name server lookup</i>.
         </p>
+      </section>
 
-    </div>
+    </section>
 
+  </div>
 </body>
 
 </html>
