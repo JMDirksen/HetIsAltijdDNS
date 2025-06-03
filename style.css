@@ -58,8 +58,12 @@ h2 {
     font-size: x-large;
 }
 
-.content section p a {
+.content a {
     color: cornflowerblue;
     font-weight: bold;
     text-decoration: none;
+}
+
+.content a:hover {
+    color: coral;
 }
